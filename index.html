@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+      <div class="card">
+        <div class="mobile-view">
+            <h2>talk to our experts</h2>
+            <h3 id="heading">Next generation english <br>Speaking institute</h3>
+            <div>
+                <div class="phone-icon">
+                    <img src="img/white-phone-icon-png.png" alt="">
+                </div>
+                <span>8010263263</span>
+            </div>
+            <span class="or">or</span>
+           <button>talk to our experts</button>
+        </div>
+        <h1 class="main-head">English Spoken Course</h1>
+        <h4>amongst <br> Leading English <br>Speaking <br> institute in New <br>Delhi</h4>
+        <div class="input-card">
+            <h3>Get Free Consultation</h3>
+            <div class="input">
+                <input type="text" placeholder="Enter Your Name" class="in">
+                <input type="text" class="in" placeholder="Enter Your Number">
+                <input type="text" class="in" placeholder="Your Message">
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="log">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="mobile">
+                <img src="img/mob-img.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <ul>
+                <li>Interactive Learning Methods</li>
+                <li>Experienced Trainers</li>
+                <li>Personalized Feedback</li>
+                <li>Advanced Learning Modules</li>
+              </ul>
+        </div>
+        <div class="head">
+            <div>Join the best English <br> speaking institute</div>
+        </div>
+        <div class="right">
+            <h3>Holistic Development</h3>
+            <h2>Better English || Better You</h2>
+            <h5>Better English <br> Better You</h5>
+            <button>talk to our experts</button>
+        </div>
+      </div>
+   </div>
+   <div class="left-fixed">
+    <div class="left">
+        <h3>talk to our experts <br> 
+            <span> 8010-263-263</span></h3>
+    </div>
+    </div>
+
+    <div class="about">
+        <h2 id="about-txt">About Engmates<sup>TM</sup> ></h2>
+        <p style="display: none;" id="para">ENgmates<sup>TM</sup> provides high-quality English at extremely affordable and reasonable fees compared to other institutions. <br>
+        Unlike Others, we offer comprehensive content that exceeds a expectations without straining your budget. Choose ENgmates<sup>TM</sup> for <br> great returns on low investment </p>
+    </div>
+
+<script>
+    let click=document.querySelector('#about-txt')
+    let para=document.querySelector('#para')
+    click.addEventListener("click",()=>
+    {
+        if(para.style.display=="none")
+        {
+            para.style.display="block"
+        }
+        else{
+            para.style.display='none'
+        }
+    })
+</script>
+</body>
+</html>

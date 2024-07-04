@@ -1,0 +1,320 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: "Roboto",sans-serif;
+}
+  body{
+    background: url(./img/col6image1.jpg) no-repeat center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+  .container{
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
+}
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 100px;
+    width: 200px;
+    height: auto;
+}
+.logo img{
+width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card h1{
+ font-size: 25px;
+ text-transform: uppercase;
+ margin: 10px 0;
+ color: rgb(133, 10, 10);
+ font-weight: 800;
+}
+.input-card{
+    background-color: white;
+    width: 375px;
+    height: auto;
+}
+.input-card h3{
+    text-align: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+    color: rgb(133, 10, 10);
+    font-weight: 800;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.in{
+    background-color: rgb(119, 7, 7);
+    width: 300px;
+    height: 25px;
+    color: white;
+    border: none;
+    padding-left: 15px;
+}
+.in::placeholder{
+    color: white;
+}
+.input button{
+    width: 375px;
+    height: 30px;
+    color: white;
+    border: none;
+    background-color: rgb(144, 5, 5);
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 2px;
+}
+.input button:hover{
+    background-color: rgb(148, 148, 5);
+}
+.content{
+    margin: 20px 0 0 20px;
+}
+.content ul li{
+    line-height: 22px;
+}
+.head>div{
+    margin-top: 20px;
+    border-top:2px dotted black;
+    border-bottom:2px dotted black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(156, 19, 19);
+    font-weight: 800;
+}
+.right h3{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(109, 9, 9);
+    font-weight: 800;
+    font-size: 20px;
+}
+.right h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 900;
+}
+.right h5{
+    display: none;
+}
+.right button{
+    display: none;
+}
+.left-fixed{
+  position: fixed;
+  top: 80%;
+  left: 0;
+}
+.left{
+    background-color: rgb(77, 5, 5);
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px 20px;
+}
+.left h3{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.left h3 span{
+    font-size: 33px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.about h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(117, 8, 8);
+    font-weight: 800;
+}
+
+.about p{
+    background-color: rgb(125, 6, 6);
+    color: white;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.mobile-view{
+    display: none;
+}
+.card h4{
+    display: none;
+}
+.bg{
+    display: none;
+}
+
+@media (max-width:360px)
+{
+    body{
+        background: none;
+       }
+       .logo{
+        display: none;
+       }
+       .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+       }
+   .mobile-view{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(251, 220, 225);
+    gap: 10px;
+   }
+
+   .mobile-view h2{
+    margin-top: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgb(151, 12, 12);
+   }
+   .mobile-view #heading{
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(151, 12, 12);
+   }
+   .mobile-view div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+   }
+   .mobile-view div .phone-icon{
+    width: 20px;
+    height: auto;
+   }
+   .mobile-view div .phone-icon img{
+    width: 100%;
+   }
+   .mobile-view div span{
+    font-size: 25px;
+    color: rgb(151, 12, 12);
+    font-weight: 800;
+   }
+   .or{
+    color: rgb(151, 12, 12);
+    font-size: 18px;
+   }
+   .mobile-view button{
+    border: none;
+    background-color: rgb(134, 8, 8);
+    color: white;
+    width: 90%;
+    height: 33px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+   }
+   .mobile-view button:hover{
+    background-color: white;
+    color: rgb(215, 215, 67);
+   }
+   .card .main-head{
+   display: none;
+   }
+   .card h4{
+    display: block;
+    font-size: 30px;
+    color: rgb(118, 11, 11);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 10px;
+   }
+   .input-card{
+    border: 2px solid rgb(179, 179, 127);
+    width: 300px;
+    margin:auto;
+    height: auto;
+    background-color: rgb(244, 239, 239);
+   }
+   .input-card .in{
+    width: 260px;
+   }
+   .input-card .input button{
+    width: 300px;
+   }
+   .bg{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+   }
+   .log{
+    width: 80%;
+    height: auto
+   }
+   .mobile{
+    width: 100%;
+    height: auto;
+   }
+   .log img,.mobile img{
+    width: 100%;
+   }
+   .right h2{
+    display: none;
+   }
+   .right h5{
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+   }
+   .right button{
+    display: block;
+    border: none;
+    background-color: rgb(134, 8, 8);
+    color: white;
+    width: 90%;
+    height: 33px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 10px auto;
+}
+.right button:hover{
+    background-color: white;
+    color: rgb(215, 215, 67);
+    border: 1px solid black;
+}
+   .left-fixed{
+    display: none;
+   }
+   .about{
+    display: none;
+   }
+   
+}
